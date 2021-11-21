@@ -21,16 +21,16 @@ form.addEventListener("submit", (event) => {
 
 const todos = [
   {
-    text: "je suis un blog",
+    text: " Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
     editMode: false,
     number: "0400000000",
     categorie: "blue",
   },
   {
-    text: "ok test salut commet ca va ?",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     editMode: false,
     number: "0400000000",
-    categorie: "blue",
+    categorie: "red",
   },
 ];
 
@@ -70,8 +70,8 @@ const CreateBlog = (todo, index) => {
 
   li.innerHTML = `
     <div>
-    <p>${todo.text}</p>
-    <p>${todo.number}</p>
+      <p>${todo.text}</p>
+      <p>${todo.number}</p>
     </div>
 
     `;
@@ -142,8 +142,10 @@ const createBlogEditElement = (todo, index) => {
 
   const divb = document.createElement("div");
   divb.classList.add("buttonEditContent");
+
   const buttonSave = document.createElement("button");
   buttonSave.innerText = "save";
+
   const buttonCancel = document.createElement("button");
   buttonCancel.innerText = "cancel";
 

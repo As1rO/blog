@@ -6,16 +6,13 @@
 @import "base";
 @import "titles";
 .section {
-  // min-height: 100vh;
   display: flex;
-  // align-items: center;
-  margin-top: 200px;
+  margin-top: 250px;
   justify-content: center;
 }
 
 .container {
   width: 600px;
-  // box-shadow: var(--box-shadow);
   padding: 0 25px 25px 25px;
   display: flex;
   flex-direction: column;
@@ -33,7 +30,7 @@
     background: none;
     border: none;
     border-bottom: 1px solid #fff;
-    padding: 25px;
+    padding: 25px 25px 25px 0;
     margin-bottom: 15px;
     width: 400px;
     color: #fff;
@@ -55,7 +52,7 @@
 
   select {
     background: none;
-    padding: 15px 18px;
+    padding: 15px 18px 15px 0;
     border: none;
     outline: none;
     appearance: none;
