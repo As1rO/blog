@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog-post</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <section class="section">
+      <div class="container">
+        <h1 class="title">Ajouter un blog</h1>
+        <form class="form">
+          <div class="form__el">
+            <input class="data" type="text" id="textarea" placeholder="text" maxlength="50">
+          </div>
+          <div class="form__el">
+            <input class="data" type="number" id="number" placeholder="number" maxlength="16">
+          </div>
+          <div class=" form__el select">
+            <select class="data" name="categorie" id="categorie-select">
+              <option value="catégories" disabled selected>catégories</option>
+              <option value="blue">blue</option>
+              <option value="red">red</option>
+              <option value="green">green</option>
+            </select>
+          </div>
+          <input type="submit" value="Envoi"></input>
+        </form>
+      </div>
+      <div class="container-blog">
+        <div class="filter">
+          <div class="filter__el">
+            <p>filtres :</p>
+            <button class="buttonFilter">blue</button>
+            <button class="buttonFilter">red</button>
+            <button class="buttonFilter">green</button>
+          </div>
+          <button class="buttonFIlterRemove">remove filter</button>
+        </div>
+        <ul class="post">
+          <li class="post__el">
+            <p>text</p>
+            <button class="button-edit">Edit</button>
+            <button class="button-remove">Remove</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </body>
+
+</html>

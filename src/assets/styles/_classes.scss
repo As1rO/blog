@@ -1,0 +1,7 @@
+@mixin button {
+  padding: 7px 17px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--color-black-L);
+}

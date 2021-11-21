@@ -1,0 +1,274 @@
+@import "variables";
+@import "reset";
+@import "classes";
+@import "media-queries";
+@import "utils";
+@import "base";
+@import "titles";
+.section {
+  // min-height: 100vh;
+  display: flex;
+  // align-items: center;
+  margin-top: 200px;
+  justify-content: center;
+}
+
+.container {
+  width: 600px;
+  // box-shadow: var(--box-shadow);
+  padding: 0 25px 25px 25px;
+  display: flex;
+  flex-direction: column;
+}
+.container-blog {
+  min-width: 500px;
+}
+
+.form {
+  &__el {
+    margin-bottom: 10px;
+  }
+
+  &__el input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding: 25px;
+    margin-bottom: 15px;
+    width: 400px;
+    color: #fff;
+    &:focus {
+      outline: none !important;
+    }
+    &::placeholder {
+      font-size: 1.4rem;
+      line-height: 23.71px;
+      text-transform: uppercase;
+    }
+  }
+  .select {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+  }
+
+  select {
+    background: none;
+    padding: 15px 18px;
+    border: none;
+    outline: none;
+    appearance: none;
+    margin-top: 15px;
+    background-position: right 50%;
+    background-repeat: no-repeat;
+    background-image: url("../images/arrow.png");
+    padding-right: 2em;
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, 0.4);
+
+    text-transform: uppercase;
+    font-weight: 400;
+
+    & option {
+      background: var(--color-black);
+    }
+  }
+
+  input[type="submit"] {
+    width: 400px;
+    background-color: var(--color-blue);
+    border: none;
+    padding: 25px;
+    color: #fff;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: ALL 0.3s ease-in-out;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+
+  &__el {
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+    line-height: 23.71px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    padding: 15px;
+    box-shadow: var(--box-shadow);
+    min-width: 500px;
+    display: flex;
+    justify-content: space-between;
+
+    & p {
+      font-size: 1.4rem;
+    }
+
+    & p:last-child {
+      font-size: 1.2rem;
+      font-weight: 300;
+      letter-spacing: 1.4px;
+      padding-top: 15px;
+    }
+    &--edit {
+      display: block;
+      background-color: var(--color-black);
+
+      div {
+        display: flex;
+        flex-direction: column;
+
+        input {
+          background: none;
+          border: none;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+          padding: 15px;
+          margin-bottom: 15px;
+          width: 400px;
+          color: #fff;
+          &:focus {
+            outline: none !important;
+          }
+          &::placeholder {
+            font-size: 1.4rem;
+            line-height: 23.71px;
+            text-transform: uppercase;
+          }
+        }
+        select {
+          background: none;
+          padding: 15px 18px;
+          border: transparent;
+          outline: none;
+          appearance: none;
+          border: none;
+          font-size: 1.4rem;
+          color: rgba(255, 255, 255, 0.4);
+          background-position: right 50%;
+          background-repeat: no-repeat;
+          background-image: url("../images/arrow.png");
+          padding-right: 2em;
+          font-size: 1.4rem;
+          color: rgba(255, 255, 255, 0.4);
+          text-transform: uppercase;
+          font-weight: 400;
+          width: 100px;
+          cursor: pointer;
+
+          & option {
+            background: var(--color-black);
+          }
+        }
+      }
+    }
+  }
+
+  .buttonEditContent {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+
+    button {
+      background: transparent;
+      border: none;
+      padding: 5px;
+      outline: none;
+      color: #fff;
+      font-size: 1.4rem;
+      letter-spacing: 1.2px;
+      transition: ALL 0.2s ease-in-out;
+      cursor: pointer;
+      color: var(--color-green);
+
+      &:first-child {
+        color: var(--color-red);
+      }
+      &:hover {
+        color: rgba(255, 255, 255, 0.4);
+      }
+    }
+  }
+}
+
+.filter {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+
+  &__el {
+    display: flex;
+    & p {
+      margin-right: 15px;
+      letter-spacing: 1.6px;
+      color: #fff;
+      font-size: 1.4rem;
+    }
+  }
+
+  button {
+    background: none;
+    border: none;
+    font-size: 1.4rem;
+    display: inline-block;
+
+    margin-right: 15px;
+    letter-spacing: 1.6px;
+    cursor: pointer;
+    color: #fff;
+    &:hover {
+      opacity: 0.4;
+    }
+
+    &:nth-child(2):focus {
+      color: var(--color-blue);
+    }
+    &:nth-child(3):focus {
+      color: var(--color-red);
+    }
+    &:nth-child(4):focus {
+      color: var(--color-green);
+    }
+  }
+
+  .buttonFIlterRemove {
+    margin: 0;
+    opacity: 0.7;
+  }
+}
+
+.button-modif {
+  width: 20px;
+  height: 20px;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  text-indent: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  background-image: url("../images/delete.png");
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  outline: none;
+
+  cursor: pointer;
+  &:first-child {
+    background-image: url("../images/edit.png");
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
